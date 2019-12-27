@@ -6,6 +6,7 @@
 
 以下の環境にて動作確認を行っています。
 
+- Raspberry Pi3 Model B
 - OS: Ubuntu 16.04.6 LTS (server)
 
 ## 作成したドライバについて
@@ -21,8 +22,8 @@ sudo chmod 666 /dev/myled0
 echo [コマンド] > /dev/myled0
 ```
 ### コマンドの説明
-- "1" LEDが左から順に点灯し、カウントアップするたびに点灯する速度が上がっていきます。
-- "0" すべてのLEDを消す。
+- "1" : LEDが左から順に点灯し、カウントアップするたびに点灯する速度が上がっていきます。
+- "0" : すべてのLEDを消す。
 
 ### 使用例
 ```
@@ -30,4 +31,5 @@ echo 1 > /dev/myled0
 ```
 
 動作させると以下のような動きになります。
+
 [Youtubeリンク](https://www.youtube.com/watch?v=FNOWZhn0RNo)
